@@ -5,8 +5,143 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ElevatorProject"
         mc:Ignorable="d"
-        Title="ExteriorElevatorPanels" Height="300" Width="300">
+        Title="ExteriorElevatorPanels" Height="300" Width="308.899">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="271*"/>
+            <ColumnDefinition Width="21*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="display0" 
+    		Content="1" 
+    		FontSize="32"
+    		Foreground="Red"
+    		HorizontalAlignment="Left" 
+    		VerticalAlignment="Top" 
+    		HorizontalContentAlignment="Center" 
+    		VerticalContentAlignment="Center" 
+    		Margin="0,71,0,0"
+    		BorderThickness="2"
+    		BorderBrush="Black"
+    		Height="77" 
+    		Width="71" 
+    		RenderTransformOrigin="0.515,0.49">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.201"/>
+                    <TranslateTransform X="0.091" Y="-0.396"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="floorNum"
+    		Content="3" 
+    		FontSize="32"
+    		HorizontalAlignment="Left" 
+    		VerticalAlignment="Top"
+    		HorizontalContentAlignment="Center" 
+    		Margin="172,5,0,0" 
+    		Width="46" Height="62" RenderTransformOrigin="0.5,0.5"
+    >
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.201"/>
+                    <TranslateTransform X="0.345" Y="0.16"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="label" 
+    		Content="Floor"
+    		FontSize="32"
+    		HorizontalAlignment="Left" 
+    		VerticalAlignment="Top"
+    		HorizontalContentAlignment="Center" 
+    		Margin="85,5,0,0" RenderTransformOrigin="0.5,0.5"
+    >
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.201"/>
+                    <TranslateTransform X="0.361" Y="-0.082"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="display1" 
+    		Content="1" 
+    		FontSize="32"
+    		Foreground="Red"
+    		HorizontalAlignment="Left" 
+    		VerticalAlignment="Top" 
+    		HorizontalContentAlignment="Center" 
+    		VerticalContentAlignment="Center" 
+    		Margin="76,71,0,0"
+    		BorderThickness="2"
+    		BorderBrush="Black"
+    		Height="77" 
+    		Width="71" 
+    		RenderTransformOrigin="0.515,0.49">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.201"/>
+                    <TranslateTransform X="0.09" Y="-0.129"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="display2" 
+    		Content="1" 
+    		FontSize="32"
+    		Foreground="Red"
+    		HorizontalAlignment="Left" 
+    		VerticalAlignment="Top" 
+    		HorizontalContentAlignment="Center" 
+    		VerticalContentAlignment="Center" 
+    		Margin="152,71,0,0"
+    		BorderThickness="2"
+    		BorderBrush="Black"
+    		Height="77" 
+    		Width="71" 
+    		RenderTransformOrigin="0.515,0.49">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.201"/>
+                    <TranslateTransform X="0.09" Y="0.137"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="display3" 
+    		Content="1" 
+    		FontSize="32"
+    		Foreground="Red"
+    		HorizontalAlignment="Left" 
+    		VerticalAlignment="Top" 
+    		HorizontalContentAlignment="Center" 
+    		VerticalContentAlignment="Center" 
+    		Margin="228,71,0,0"
+    		BorderThickness="2"
+    		BorderBrush="Black"
+    		Height="77" 
+    		Width="71" 
+    		RenderTransformOrigin="0.515,0.49" Grid.ColumnSpan="2">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.201"/>
+                    <TranslateTransform X="0.09" Y="0.404"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <ComboBox x:Name="comboBoxSelectionE" HorizontalAlignment="Left" Margin="149,212,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label1" Content="Select Elevator" HorizontalAlignment="Left" Margin="149,181,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="upButton" Content="UP" HorizontalAlignment="Left" Margin="43,181,0,0" VerticalAlignment="Top" Width="75" Click="upButton_Click"/>
+        <Button x:Name="downButton" Content="DOWN" HorizontalAlignment="Left" Margin="43,211,0,0" VerticalAlignment="Top" Width="75" Click="downButton_Click"/>
+
     </Grid>
 </Window>

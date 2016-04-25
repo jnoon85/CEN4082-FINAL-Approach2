@@ -23,83 +23,16 @@ namespace ElevatorProject
         {
             InitializeComponent();
         }
-
-       private void Button_Click(object sender, RoutedEventArgs e)
+        
+        private void upButton_Click(object sender, RoutedEventArgs e)
         {
-
-            Button btn = sender as Button;
-
-            illuminateButton(btn);
-
-            //updateDisplay(2000, btn);
 
         }
 
-        private void illuminateButton(Button btn)
+        private void downButton_Click(object sender, RoutedEventArgs e)
         {
-            if (btn.Background == Brushes.Yellow)
-            {
-                btn.ClearValue(Control.BackgroundProperty);
-            }
-            else
-            {
-                btn.Background = Brushes.Yellow;
-            }
+
         }
-
-
-        //public Display(int floor, int location, Label display)
-        //{
-        //    this.floor = floor;
-        //    this.location = location;
-        //    this.display = display;
-        //    this.display.Content = location;
-        //}
-
-        //public void updateDisplay(int floor)
-        //{
-        //    this.location = floor;
-        //    this.display.Content = floor;
-        //}
-
-        //public int getLocation()
-        //{
-        //    return this.location;
-        //}
-
-        //private async void updateDisplay(int timeToDelay, Button btn)
-        //{
-
-        //    int selected = random.Next(0, 4);
-        //    Display display = this.mainPanel.displays[selected];
-
-        //    int floor = Convert.ToInt32(floorNum.Content);
-        //    int position = display.getLocation();
-        //    if (floor > position)
-        //    {
-        //        while (floor > position)
-        //        {
-        //            await Task.Delay(timeToDelay);
-        //            position += 1;
-        //            display.updateDisplay(position);
-        //        }
-
-        //    }
-        //    else if (floor < position)
-        //    {
-        //        while (floor < position)
-        //        {
-        //            await Task.Delay(timeToDelay);
-        //            position -= 1;
-        //            display.updateDisplay(position);
-        //        }
-        //    }
-
-        //    illuminateButton(btn);
-
-        //    MessageBox.Show("Elevator " + (selected + 1) + " has arrived at the floor.");
-
-        //}
     }
 
     public class Display
